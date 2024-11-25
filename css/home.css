@@ -1,0 +1,125 @@
+/* Home Section Layout */
+.home {
+   padding: 50px 0;
+}
+
+.home .row {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: 20px;
+   flex-wrap: wrap;
+}
+
+/* Left Column: Intro Text */
+.home-content {
+   flex: 1;
+   max-width: 50%;
+}
+.block {
+  flex: 0 0 75%;
+  max-width: 75%;
+  color: #4caf50;
+  padding-left: 35px;
+  border-left: 3px solid rgb(236, 241, 250);
+  margin-top: 50px;
+}
+.block h1 {
+  color: #4caf50; /* Updated to green */  
+  font-size: 40px;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+}
+.block h3 {
+  color: white;
+  font-size: 25px;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+}
+.block h6 {
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+}
+.cv-btn {
+  padding-top: 20px;
+}
+.cv-btn a {
+  font-size: 14px;
+  color: white;
+  background-color: transparent;
+  border: 1px solid #4caf50;
+  border-radius: 4px;
+  padding: 12px 25px;
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.cv-btn a:hover {
+  background-color: #4caf50;
+  color: #000;
+}
+/* Right Column: Carousel */
+.carousel-container {
+   flex: 1;
+   max-width: 50%;
+   padding-right:30px ;  
+}
+
+.carousel {
+   position: relative;
+   max-width: 100%;
+   margin: 0 auto;   
+   overflow: hidden;
+   
+   
+}
+
+.carousel-track-container {
+   position: relative;
+   overflow: hidden; 
+    
+}
+
+.carousel-track {
+   display: flex;
+   transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+   min-width: 100%;
+   transition: opacity 0.5s;
+}
+
+.carousel-slide img {
+   width: 100%;
+   height: 50px;
+   border-radius: 10px;
+}
+
+/* Carousel Buttons */
+.carousel-button {
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   background-color: rgba(0, 0, 0, 0.5);
+   color: white;
+   border: none;
+   padding: 10px;
+   cursor: pointer;
+   z-index: 1;
+}
+
+.carousel-button--left {
+   left: 10px;
+}
+
+.carousel-button--right {
+   right: 10px;
+}

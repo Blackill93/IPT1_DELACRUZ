@@ -1,0 +1,190 @@
+/* General styles for the home section */
+.home-content {
+   text-align: center;
+   padding: 50px 0;
+}
+
+.home-text {
+   margin-bottom: 30px;
+}
+
+.carousel-container {
+   margin-top: 30px;
+}
+
+.carousel img {
+   max-width: 100%;
+   height: auto;
+   object-fit: cover;
+}
+
+.home-text h1 {
+   font-size: 48px;
+   margin-bottom: 10px;
+}
+
+.home-text h3 {
+   font-size: 24px;
+   margin-bottom: 20px;
+}
+
+/* Styles for the CV button */
+.cv-btn a {
+   background-color: #333;
+   color: white;
+   padding: 10px 20px;
+   border-radius: 5px;
+   text-decoration: none;
+}
+
+.cv-btn a:hover {
+   background-color: #555;
+}
+
+/* Additional styles for responsive design */
+@media (max-width: 768px) {
+   .home-text h1 {
+      font-size: 32px;
+   }
+
+   .home-text h3 {
+      font-size: 18px;
+   }
+}
+
+
+
+
+
+
+
+.about {
+  padding: 100px 15px;
+  background-color: #2b2b2d; /* Dark background */
+}
+
+.img {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.img img {
+  width: 97%;
+  border-radius: 50%;
+  margin-top: -13%;
+  display: block;
+}
+
+.text {
+  flex: 0 0 50%;
+  max-width: 50%;
+  padding-left: 30px;
+}
+
+
+.text h4 {
+  font-size: 25px;
+  font-weight: 600;
+  margin: 0 0 10px;
+  color: #4caf50; /* Updated to green */
+}
+
+.text h6 {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0 0 25px;
+  color: white; /* Updated to green */
+}
+
+.text h6 span {
+  color: #5f88e0; /* Updated to blue */
+  position: relative;
+}
+
+.text h6 span::before {
+  content: "";
+  left: 0;
+  right: 100%;
+  position: absolute;
+  height: 2px;
+  bottom: 0px;
+  transition: all 0.5s ease;
+  background-color: lightblue; /* Updated underline to green */
+}
+
+.text h6 span:hover::before {
+  content: "";
+  left: 0;
+  right: 0;
+  position: absolute;
+  height: 2px;
+  background-color: #4caf50; /* Updated underline to green */
+  bottom: 0px;
+}
+
+.text p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #f2f2f2; /* Light text color */
+}
+
+.skills {
+  padding: 20px 0px;
+}
+
+.skills h6 {
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0 0 25px;
+  color: #4caf50; /* Updated to green */
+}
+
+.skills-list {
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.fa-ul li {
+  font-size: 14px;
+  font-weight: 400;
+  color: #f2f2f2; /* Light text color */
+}
+
+.fa-ul .fa-li {
+  font-size: 14px;
+  font-weight: 400;
+  color: #f2f2f2; /* Light text color */
+}
+
+.social {
+  padding-top: 10px;
+}
+
+.social a {
+  height: 30px;
+  width: 30px;
+  background-color: #4caf50; /* Updated to green */
+  display: inline-block;
+  border: 1px solid #4caf50; /* Updated to green */
+  border-radius: 4px;
+  line-height: 28px;
+  text-align: center;
+  margin: 0px 1px;
+  transition: all 0.5s ease;
+}
+
+.social a:hover {
+  background-color: transparent;
+  color: #4caf50; /* Updated to green */
+}
+
+.social a .fa {
+  color: #fff;
+  font-size: 14px;
+}
+
+.social a .fa:hover {
+  color: #4caf50; /* Updated to green */
+}

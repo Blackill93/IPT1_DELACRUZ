@@ -1,0 +1,173 @@
+
+
+
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #2b2b2d;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.resume-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 40px auto;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Navigation Bar Styles */
+.navbar {
+    background-color: #2b2b2d;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.navbar ul {   
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: left;
+}
+
+.navbar ul li {
+    margin: 0 20px;
+}
+
+.navbar ul li a {
+    color: white; 
+    border: 2px solid #4caf50;
+    border-radius: 10px; 
+    padding: 6px 12px;     
+    font-size: 16px;
+}
+
+.navbar ul li a:hover {     
+
+        
+    background-color: #4caf50;
+}
+
+.skills ul {
+    display: grid;
+    grid-template-columns: 2fr 100px;  /* Two equal-width columns */
+    flex-direction: column;
+    gap: 1px;  /* Space between items */
+    padding: 0;
+    text-overflow: ellipsis; 
+} 
+
+.skills ul li {
+    margin: 0;
+}
+
+
+/* Left Column (Profile, Contact Info, Skills) */
+.left-column {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    width: 50%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-image img {
+    max-width: 150px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    margin-bottom: 20px;
+}
+
+.contact-info, .skills, .languages {
+    margin-bottom: 40px;
+}
+
+h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #ecf0f1;
+    padding-bottom: 5px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 8px;
+}
+
+/* Right Column (Details) */
+.right-column {
+    width: 70%;
+    padding: 40px;
+}
+
+.header-content {
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+.job-title {
+    font-size: 18px;
+    color: #3498db;
+    margin-top: 5px;
+}
+
+h2 {
+    font-size: 24px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 5px;
+}
+
+p, ul li {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+/* Scroll to Top Button */
+.scroll-top {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.scroll-button {
+    background-color: #2b2b2d; /* Match with other button styles */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: 1px solid #4caf50;
+    border-radius: 5px;
+    margin: 1px; /* Add some space between buttons */
+}
+
+.scroll-button:hover {
+    background-color: #137315; /* Darker shade on hover */
+}

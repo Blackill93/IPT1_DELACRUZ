@@ -1,0 +1,114 @@
+header {
+  position: absolute;
+  padding: 0px 15px;
+  left: 0px;
+  right: 0px;
+  border-bottom: 1px solid #423940;
+  z-index: 11;
+  
+}
+
+.fixed {
+  background-color: #2b2b2d;
+  position: fixed;
+  border-color: #2b2b2d;
+  animation: fixHeader 1s ease;
+  z-index: 11;
+}
+
+@keyframes fixHeader {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+.container {
+  max-width: 1140px;
+  margin: auto;
+}
+
+header .row {
+  justify-content: space-around;
+  align-items: center;
+}
+
+.brand-name a {
+  font-size: 22px;
+  font-weight: 500;
+  color: #4caf50;
+  position: relative;
+  font-family: 'Lobster', cursive;
+}
+
+.fixed .brand-name a {
+  color: #4caf50;
+}
+
+.hamburger .fa {
+  font-size: 20px;
+  background-color: #2b2b2d;
+  color:#4caf50;
+  display: none;
+  height: 30px;
+  width: 35px;
+  border-radius: 2px;
+  line-height: 30px;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid #2b2b2d;;
+  
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li {
+  display: inline;
+  margin-left: 35px;
+}
+
+.navbar ul li a {
+  font-size: 15px;
+  line-height: 72px;
+  color: #4caf50;
+  font-weight: 600;
+  /* display: block; */
+  position: relative;
+}
+
+.fixed .navbar ul li a {
+  color: #000;
+}
+
+.navbar ul li a::before {
+  content: "";
+  height: 2px;
+  background-color: #2b2b2d;
+  width: 0%;
+  position: absolute;
+  right: 0px;
+  bottom: -27px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.fixed .navbar ul li a::before {
+  background-color: #5f88e0;
+}
+
+.navbar ul li a:hover::before {
+  width: 100%;
+  left: 0px;
+}
+
+.navbar ul li a.active::before {
+  width: 100%;
+  left: 0;
+}
